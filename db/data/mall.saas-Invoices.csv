@@ -1,0 +1,2 @@
+ID,invoiceNo,invoiceDate,totalAmount,status,request_ID,tenant_ID,createdAt,createdBy,modifiedAt,modifiedBy
+18907130-2e67-4aaa-8d77-087b660e2e8b,invoiceNo-18907130,2004-07-23,1326241113.44,DRAFT,12207851-0cbb-4776-959d-c392cdb4c164,45723352-b311-4cb5-a0aa-d78b20cf9cdb,2001-11-23T00:00:00.000Z,createdBy.b98u2@example.net,2022-06-06T00:00:00.000Z,modifiedBy.b98u2@example.net

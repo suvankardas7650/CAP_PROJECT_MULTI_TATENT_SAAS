@@ -1,0 +1,3 @@
+ID,description,cost,asset_ID,request_ID,createdAt,createdBy,modifiedAt,modifiedBy
+19414831-f2e9-4793-8f46-0e846ff70280,description-19414831,79412823.23,25858251-14ec-4f24-95c0-f5fa6c277c1e,12207851-0cbb-4776-959d-c392cdb4c164,2019-10-27T00:00:00.000Z,createdBy.bk4kv@example.net,2018-06-11T00:00:00.000Z,modifiedBy.bk4kv@example.com
+19414832-bccb-4914-8cc3-4633240d9dd0,description-19414832,88940935.69,25858251-14ec-4f24-95c0-f5fa6c277c1e,12207851-0cbb-4776-959d-c392cdb4c164,2006-07-21T00:00:00.000Z,createdBy.bk4kw@example.net,2017-04-03T00:00:00.000Z,modifiedBy.bk4kw@example.net

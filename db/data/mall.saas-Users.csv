@@ -1,0 +1,2 @@
+ID,fullName,email,role,tenant_ID,createdAt,createdBy,modifiedAt,modifiedBy
+13592723-5ccb-4fcc-9bbc-8da4f77fd0f1,fullName-13592723,email-13592723,STAFF,45723352-b311-4cb5-a0aa-d78b20cf9cdb,2020-10-22T00:00:00.000Z,createdBy.83c7n@example.org,2016-09-15T00:00:00.000Z,modifiedBy.83c7n@example.net

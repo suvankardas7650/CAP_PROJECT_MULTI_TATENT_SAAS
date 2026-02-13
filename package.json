@@ -1,0 +1,38 @@
+{
+  "name": "serviceManagement",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js-community/odata-v2-adapter": "^1.15.9",
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-assetsapppreview": "cds watch --open assetsapppreview/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-overviewpage": "cds watch --open overviewpage/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-overviewpagew": "cds watch --open overviewpagew/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-worklist": "cds watch --open worklist/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-overview": "cds watch --open overview/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-tenantsoverview": "cds watch --open tenantsoverview/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-aditlogsformentry_object_page": "cds watch --open aditlogsformentryobjectpage/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/assetsapppreview",
+    "app/overviewpage",
+    "app/overviewpagew",
+    "app/worklist",
+    "app/overview",
+    "app/tenantsoverview",
+    "app/aditlogsformentry_object_page"
+  ]
+}

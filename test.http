@@ -1,0 +1,110 @@
+### =====================================================
+### TENANT SERVICE TESTS
+### =====================================================
+
+### Get all Tenants
+GET http://localhost:4004/odata/v4/tenant/Tenants
+Content-Type: application/json
+
+### Get all Users
+GET http://localhost:4004/odata/v4/tenant/Users
+Content-Type: application/json
+
+
+### Get all Subscriptions
+GET http://localhost:4004/odata/v4/tenant/Subscriptions
+Content-Type: application/json
+
+
+### Create a new User
+POST http://localhost:4004/odata/v4/tenant/Users
+Content-Type: application/json
+
+{
+  "fullName": "John Vendor",
+  "email": "john@vendor.com",
+  "role": "Staff",
+  "tenant_ID": "REPLACE_TENANT_ID"
+}
+
+### Update User
+PATCH http://localhost:4004/odata/v4/tenant/Users(25858250-454b-4e3c-bf40-6d2f3dd71065)
+Content-Type: application/json
+
+{
+  "role": "Manager"
+}
+
+
+### Delete User
+DELETE http://localhost:4004/odata/v4/tenant/Users(25858250-454b-4e3c-bf40-6d2f3dd71065)
+Content-Type: application/json
+
+
+### =====================================================
+### OPERATIONS SERVICE TESTS
+### =====================================================
+
+### Get all Service Requests
+GET http://localhost:4004/odata/v4/operations/ServiceRequests
+Content-Type: application/json
+
+
+### Get all Service Items
+GET http://localhost:4004/odata/v4/operations/ServiceItems
+Content-Type: application/json
+
+
+### Get all Invoices
+GET http://localhost:4004/odata/v4/operations/Invoices
+Content-Type: application/json
+
+
+### Create Service Request
+POST http://localhost:4004/odata/v4/operations/ServiceRequests
+Content-Type: application/json
+
+{
+  "requestNo": "SR-1001",
+  "requestDate": "2026-02-10",
+  "status": "OPEN",
+  "tenant_ID": "REPLACE_TENANT_ID"
+}
+
+
+### Create Service Item
+POST http://localhost:4004/odata/v4/operations/ServiceItems
+Content-Type: application/json
+
+{
+  "description": "Repair display screen",
+  "cost": 500,
+  "asset_ID": "REPLACE_ASSET_ID",
+  "request_ID": "REPLACE_REQUEST_ID"
+}
+
+
+### Create Invoice
+POST http://localhost:4004/odata/v4/operations/Invoices
+Content-Type: application/json
+
+{
+  "invoiceNo": "INV-2026-01",
+  "invoiceDate": "2026-02-10",
+  "totalAmount": 500,
+  "status": "DRAFT",
+  "tenant_ID": "REPLACE_TENANT_ID",
+  "request_ID": "REPLACE_REQUEST_ID"
+}
+### Update Invoice (Will fail if edit is restricted)
+PATCH http://localhost:4004/odata/v4/operations/Invoices(invoiceNo-18907130)
+Content-Type: application/json
+
+{
+  "totalAmount": 900
+}
+
+
+### Delete Invoice (May be restricted)
+DELETE http://localhost:4004/odata/v4/operations/Invoices(invoiceNo-18907130)
+Content-Type: application/json
