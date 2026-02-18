@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started
 
 Welcome to your new project.
@@ -23,3 +24,6 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
+=======
+# CAP_PROJECT_MULTI_TATENT_SAAS
+>>>>>>> 40b87721990a6f06c456a579b9752fb09a1f4004
